@@ -1,0 +1,463 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+body{
+  /* background-image: url(./download\ \(1\).png);
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background-color: #000;
+  font-family: sans-serif;
+  color: aliceblue;
+
+}
+
+.container{
+  width: 95%;
+  margin: 500px auto;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2;
+  padding: 7%;
+  padding-left: 4%;
+  margin-top: 330px;
+}
+
+.content h1{
+  margin-top: 10px;
+  font-size: 40px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.span{
+  color: coral;
+  display: block;
+  margin-bottom: -30px;
+  line-height: 2;
+}
+.content p{
+  margin-bottom: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  text-align: center;
+}
+.content .button{
+  border-radius: 4px ;
+  padding: 12px;
+  width: 220px;
+  text-align: center;
+  margin: 50px 0px;
+  margin-top: 30px;
+  background-color: rgb(255, 123, 0);
+  text-decoration: none;
+  color: #fff;
+}
+
+.button:hover{
+  background-color: rgb(85, 3, 3);
+  transition: 0.2s;
+  text-decoration: underline;
+}
+.card em{
+  margin-bottom: 15px;
+  font-size: large;
+}
+i{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  font-size: medium;
+  color: brown;
+  display: block;
+  text-align: left;
+  padding: 5px 20px;
+}
+.card{
+  margin: 40px auto;
+  padding: 6px;
+  height: 200px;
+  width: 50%;
+  display: block;
+  border: 2px solid gray;
+  border-radius: 6px;
+  box-shadow: 2px 2px 10px 0 gray;
+  text-align: center;
+  padding: 15px 10px;
+  padding-bottom: 12px;
+  overflow-y: hidden;
+}
+.card:hover{
+  box-shadow: 2px 2px 15px 0 gray;
+  background-color: rgb(7, 7, 7);
+}
+.clear{
+  clear: both;
+}
+.copyright{
+  margin-bottom: 20px;
+}
+h3{
+  margin-top: 90px;
+  font-family: sans-serif;
+  color: darkorange;
+  text-align: center;
+}
+.google_link{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: blue;
+  float: right;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+em{
+  display: block;
+}
+.google_link{
+  color: coral;
+  text-decoration: none;
+}
+.google_link:hover{
+  color: rgb(6, 204, 211);
+  letter-spacing: 0.1px;
+  transition: 0.2s;
+  text-decoration: underline;
+}
+.foot{
+  color: beige;
+  float: right;
+  margin: 30px ;
+}
+.call{
+  position: fixed;
+  bottom: 9%;
+  right: 6%;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 2.6;
+  background-image: linear-gradient(#000,red,#000);
+  border: 3px solid red;
+  border-radius: 50%;
+  animation: boxing 1s infinite alternate-reverse;
+  z-index: 2;
+}
+.call:hover{
+  transform: scale(1.1);
+
+}
+@keyframes boxing{
+  0%{
+    transform:perspective(800px) rotateZ(-20deg);
+  }
+  50%{
+    transform:perspective(800px) rotateZ(20deg);
+  }
+}
+.call a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: lighter;
+}
+.clear{
+  clear: both;
+}
+.tochka1{
+  position: fixed;
+  bottom: 12%;
+  right: 5.7%;
+  height: 10px;
+  width: 10px;
+  margin-left: 5px;
+  background-image: linear-gradient(blue, yellow, red, #fff,green);
+  animation-name: tochka;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+
+}
+.tochka2{
+  position: fixed;
+  bottom: 12%;
+  right: 9.3%;
+  height: 10px;
+  width: 10px;
+  margin-left: 5px;
+  background-image: linear-gradient(blue, yellow, red, #fff,green);
+  animation-name: tochka;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.login_link, .signup_link{
+  color: rgb(255, 255, 255) !important;
+  padding: 3px !important;
+  font-weight: 400 !important;
+  border-radius: 3px;
+  margin: 0px !important;
+  background-color: #db4905;
+  margin-right: 0px !important;
+}
+.login_link:hover, .signup_link:hover{
+  color: #fff !important;
+}
+
+
+
+/* about_ning-css_fayli */
+.content_about{
+  height: 1000px;
+  width: 100vh;
+  padding: 0 12%;
+  padding-top: 100px;
+  margin: 0px 220px;
+  display: grid;
+  grid-template-columns: repeat(2, 250px);
+  grid-template-rows: repeat(2,400px) ;
+  column-gap: 280px;
+  row-gap: 100px;
+}
+.card_about{
+  height: 400px;
+  width: 250px;
+  padding: 10px;
+  padding-top: 30px;
+  border-radius: 10px;
+  border-bottom: 5px solid red;
+  border-top: 5px solid red;
+  color: #fff;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 1px 15px 0 gray;
+  margin-bottom: 30px;
+}
+.card_about img{
+  border-radius: 50%;
+  border: 1px solid gray;
+  height: 200px;
+  width: 200px;
+  margin-bottom: 30px;
+}
+.card_about b{
+  text-align: center;
+  padding: 6px;
+  color: rgb(255, 156, 7);
+}
+.card_about p{
+  margin: 12px 12px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+.card_about:hover{
+  transition: 0.3s;
+  box-shadow: 3px 3px 20px 5px gray;
+}
+
+
+
+
+
+
+/* price_css_fayli */
+.card-node{
+  background-color: rgba(116, 116, 116, 0.322);
+  height: 360px;
+  width: 75%;
+  margin: 120px auto 0 auto;
+  border-radius: 10px;
+  padding: 15px;
+  transform: scaleY(1.05);
+  border-bottom: 2px solid red;
+  border-top: 2px solid red;
+}
+.card-node:hover{
+  background-color: rgb(39, 38, 38);
+  box-shadow: 5px 5px 5px 0 red;
+  transition: 0.5s;
+}
+h4{
+  font-size: larger;
+  font-family: sans-serif;
+  color: red;
+  text-align: center;
+  margin: 20px ;
+}
+.tech{
+  font-size: large;
+  color: rgb(230, 179, 230);
+}
+.tech-text{
+  margin-left: 40px;
+  color: #fef;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.lorem{
+  padding: 10px;
+  font-family: sans-serif;
+  color: rgb(168, 166, 166);
+  text-align: justify;
+}
+
+.price{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: rgb(240, 146, 23);
+}
+.register{
+  width: 40%;
+  margin: 10px 200px;
+  padding: 5px;
+  background-color: gray;
+  border-radius: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: medium;
+}
+.register:hover{
+  background-color: rgb(197, 187, 197);
+  color: #000;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.data{
+  text-align: right;
+  margin-top: 20px;
+}
+.data a {
+  color: rgba(3, 175, 243, 0.938);
+}
+
+
+
+.content_price{
+  width: 100vh;
+  margin-bottom:200px;
+}
+.footer_price{
+  display: flex;
+  justify-content: center;
+  margin: 120px 60px;
+  padding-top: 30px;
+}
+.footer_price table{
+  display: inline-block;
+  margin: 0 60px;
+}
+.footer_price b{
+  margin: 30px auto;
+  width: 100%;
+}
+table tr th{
+  color: rgb(251, 127, 255);
+}
+table tr td:hover{
+  color: rgb(20, 23, 231);
+  text-decoration: underline;
+  transition: 0.1s;
+}
+
+
+/* blogs css*/
+.asides{
+  width: 70%;
+  margin: 100px auto;
+}
+.text-card, .media-card{
+  height: 260px;
+  width: 70%;
+  background-color: rgba(230, 235, 238, 0.808);
+  border-top: 5px solid red;
+  border-bottom: 5px solid red;
+  border-radius: 15px;
+  color: red;
+  margin: auto;
+  margin-bottom: 100px;
+}
+.media-blog, .text-blog{
+  margin: 20px auto;
+  color: rgb(240, 65, 2);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  font-size: larger;
+  text-align: center;
+  width: 55%;
+}
+.call-number, .social{
+  margin: 10px auto;
+  color: rgb(105, 47, 47);
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  text-align: center;
+}
+
+.call-number:hover, .social:hover{
+  text-decoration: underline;
+  color: chocolate;
+}
+
+.padd{
+  padding-bottom: 50px;
+}
+.map{
+  height: 300px;
+  width: 600px;
+  background-color: aliceblue;
+  margin: 20px auto;
+}
+.map h2{
+  color: #000;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:960px) {
+  .content_about{
+    column-gap: 150px;
+  }
+  .card-node{
+    height: 400px;
+  }
+  .register{
+    width: 200px;
+    margin-left: 75px;
+  }
+  .footer_price table{
+    margin: 20px;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .text-card, .media-card{
+    width: 90%;
+  }
+}
+@media (max-width:570px) {
+  .card-node{
+    height: 440px;
+    width: 95%;
+  }
+  .footer_price table{
+    margin: 5px;
+  }
+  .text-card, .media-card{
+    width: 95%;
+    height: 340px;
+  }
+  .media-blog, .text-blog{
+    width: 70%;
+  }
+}
+
+
